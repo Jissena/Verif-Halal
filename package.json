@@ -1,0 +1,27 @@
+{
+  "name": "verifhalal-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:setup": "node scripts/setup-db.js",
+    "db:sync": "node scripts/sync-bpjph.js",
+    "db:import-csv": "node scripts/import-csv.js"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "lucide-react": "^0.383.0",
+    "@vercel/postgres": "^0.10.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}
